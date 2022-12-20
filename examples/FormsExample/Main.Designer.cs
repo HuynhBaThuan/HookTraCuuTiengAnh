@@ -77,9 +77,10 @@
             this.labelMousePosition.AutoSize = true;
             this.labelMousePosition.BackColor = System.Drawing.Color.WhiteSmoke;
             this.labelMousePosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMousePosition.Location = new System.Drawing.Point(136, 14);
+            this.labelMousePosition.Location = new System.Drawing.Point(181, 17);
+            this.labelMousePosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMousePosition.Name = "labelMousePosition";
-            this.labelMousePosition.Size = new System.Drawing.Size(125, 13);
+            this.labelMousePosition.Size = new System.Drawing.Size(153, 17);
             this.labelMousePosition.TabIndex = 2;
             this.labelMousePosition.Text = "x={0:####}; y={1:####}";
             this.labelMousePosition.Click += new System.EventHandler(this.labelMousePosition_Click);
@@ -94,17 +95,20 @@
             this.groupBox2.Controls.Add(this.mainMenu);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(0, -6);
+            this.groupBox2.Location = new System.Drawing.Point(0, -7);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1347, 68);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(1796, 84);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
             // clearLogButton
             // 
-            this.clearLogButton.Location = new System.Drawing.Point(564, 12);
+            this.clearLogButton.Location = new System.Drawing.Point(686, 15);
+            this.clearLogButton.Margin = new System.Windows.Forms.Padding(4);
             this.clearLogButton.Name = "clearLogButton";
-            this.clearLogButton.Size = new System.Drawing.Size(75, 23);
+            this.clearLogButton.Size = new System.Drawing.Size(100, 28);
             this.clearLogButton.TabIndex = 16;
             this.clearLogButton.Text = "Clear Log";
             this.clearLogButton.UseVisualStyleBackColor = true;
@@ -114,6 +118,7 @@
             // 
             this.Tools.Dock = System.Windows.Forms.DockStyle.None;
             this.Tools.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.Tools.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.Tools.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tb_New,
             this.tb_Open,
@@ -122,10 +127,10 @@
             this.tb_Cut,
             this.tb_Copy,
             this.tb_Paste});
-            this.Tools.Location = new System.Drawing.Point(9, 36);
+            this.Tools.Location = new System.Drawing.Point(12, 44);
             this.Tools.Name = "Tools";
             this.Tools.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.Tools.Size = new System.Drawing.Size(147, 25);
+            this.Tools.Size = new System.Drawing.Size(183, 27);
             this.Tools.TabIndex = 1;
             this.Tools.Text = "toolStrip1";
             // 
@@ -135,7 +140,7 @@
             this.tb_New.Image = ((System.Drawing.Image)(resources.GetObject("tb_New.Image")));
             this.tb_New.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tb_New.Name = "tb_New";
-            this.tb_New.Size = new System.Drawing.Size(23, 22);
+            this.tb_New.Size = new System.Drawing.Size(29, 24);
             this.tb_New.Text = "&New";
             this.tb_New.Click += new System.EventHandler(this.tb_New_Click);
             // 
@@ -145,7 +150,7 @@
             this.tb_Open.Image = ((System.Drawing.Image)(resources.GetObject("tb_Open.Image")));
             this.tb_Open.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tb_Open.Name = "tb_Open";
-            this.tb_Open.Size = new System.Drawing.Size(23, 22);
+            this.tb_Open.Size = new System.Drawing.Size(29, 24);
             this.tb_Open.Text = "&Open";
             this.tb_Open.Click += new System.EventHandler(this.tb_Open_Click_1);
             // 
@@ -155,14 +160,14 @@
             this.tb_Save.Image = ((System.Drawing.Image)(resources.GetObject("tb_Save.Image")));
             this.tb_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tb_Save.Name = "tb_Save";
-            this.tb_Save.Size = new System.Drawing.Size(23, 22);
+            this.tb_Save.Size = new System.Drawing.Size(29, 24);
             this.tb_Save.Text = "&Save";
             this.tb_Save.Click += new System.EventHandler(this.tb_Save_Click_1);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // tb_Cut
             // 
@@ -170,7 +175,7 @@
             this.tb_Cut.Image = ((System.Drawing.Image)(resources.GetObject("tb_Cut.Image")));
             this.tb_Cut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tb_Cut.Name = "tb_Cut";
-            this.tb_Cut.Size = new System.Drawing.Size(23, 22);
+            this.tb_Cut.Size = new System.Drawing.Size(29, 24);
             this.tb_Cut.Text = "C&ut";
             this.tb_Cut.Click += new System.EventHandler(this.tb_Cut_Click_1);
             // 
@@ -180,7 +185,7 @@
             this.tb_Copy.Image = ((System.Drawing.Image)(resources.GetObject("tb_Copy.Image")));
             this.tb_Copy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tb_Copy.Name = "tb_Copy";
-            this.tb_Copy.Size = new System.Drawing.Size(23, 22);
+            this.tb_Copy.Size = new System.Drawing.Size(29, 24);
             this.tb_Copy.Text = "&Copy";
             this.tb_Copy.Click += new System.EventHandler(this.tb_Copy_Click_1);
             // 
@@ -190,7 +195,7 @@
             this.tb_Paste.Image = ((System.Drawing.Image)(resources.GetObject("tb_Paste.Image")));
             this.tb_Paste.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tb_Paste.Name = "tb_Paste";
-            this.tb_Paste.Size = new System.Drawing.Size(23, 22);
+            this.tb_Paste.Size = new System.Drawing.Size(29, 24);
             this.tb_Paste.Text = "&Paste";
             this.tb_Paste.Click += new System.EventHandler(this.tb_Paste_Click_1);
             // 
@@ -200,11 +205,12 @@
             this.textBoxLog.BackColor = System.Drawing.Color.White;
             this.textBoxLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLog.Location = new System.Drawing.Point(319, 12);
+            this.textBoxLog.Location = new System.Drawing.Point(425, 15);
+            this.textBoxLog.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxLog.Name = "textBoxLog";
             this.textBoxLog.ReadOnly = true;
             this.textBoxLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxLog.Size = new System.Drawing.Size(239, 20);
+            this.textBoxLog.Size = new System.Drawing.Size(253, 23);
             this.textBoxLog.TabIndex = 17;
             this.textBoxLog.WordWrap = false;
             this.textBoxLog.TextChanged += new System.EventHandler(this.textBoxLog_TextChanged);
@@ -212,16 +218,17 @@
             // mainMenu
             // 
             this.mainMenu.Dock = System.Windows.Forms.DockStyle.None;
+            this.mainMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mM_File,
             this.mM_Edit,
             this.mM_Tools});
-            this.mainMenu.Location = new System.Drawing.Point(2, 8);
+            this.mainMenu.Location = new System.Drawing.Point(3, 10);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(131, 24);
+            this.mainMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.mainMenu.Size = new System.Drawing.Size(163, 28);
             this.mainMenu.TabIndex = 18;
             this.mainMenu.Text = "menuStrip1";
-            this.mainMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mainMenu_ItemClicked);
             // 
             // mM_File
             // 
@@ -233,7 +240,7 @@
             this.toolStripSeparator13,
             this.file_Exit});
             this.mM_File.Name = "mM_File";
-            this.mM_File.Size = new System.Drawing.Size(37, 20);
+            this.mM_File.Size = new System.Drawing.Size(46, 24);
             this.mM_File.Text = "&File";
             this.mM_File.Click += new System.EventHandler(this.mM_File_Click);
             // 
@@ -243,8 +250,9 @@
             this.file_New.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.file_New.Name = "file_New";
             this.file_New.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.file_New.Size = new System.Drawing.Size(146, 22);
+            this.file_New.Size = new System.Drawing.Size(181, 26);
             this.file_New.Text = "&New";
+            this.file_New.Click += new System.EventHandler(this.file_New_Click_1);
             // 
             // file_Open
             // 
@@ -252,14 +260,14 @@
             this.file_Open.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.file_Open.Name = "file_Open";
             this.file_Open.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.file_Open.Size = new System.Drawing.Size(146, 22);
+            this.file_Open.Size = new System.Drawing.Size(181, 26);
             this.file_Open.Text = "&Open";
             this.file_Open.Click += new System.EventHandler(this.file_Open_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(178, 6);
             // 
             // file_Save
             // 
@@ -267,19 +275,21 @@
             this.file_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.file_Save.Name = "file_Save";
             this.file_Save.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.file_Save.Size = new System.Drawing.Size(146, 22);
+            this.file_Save.Size = new System.Drawing.Size(181, 26);
             this.file_Save.Text = "&Save";
+            this.file_Save.Click += new System.EventHandler(this.file_Save_Click_1);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(178, 6);
             // 
             // file_Exit
             // 
             this.file_Exit.Name = "file_Exit";
-            this.file_Exit.Size = new System.Drawing.Size(146, 22);
+            this.file_Exit.Size = new System.Drawing.Size(181, 26);
             this.file_Exit.Text = "E&xit";
+            this.file_Exit.Click += new System.EventHandler(this.file_Exit_Click_1);
             // 
             // mM_Edit
             // 
@@ -293,27 +303,27 @@
             this.toolStripSeparator15,
             this.edit_SelectAll});
             this.mM_Edit.Name = "mM_Edit";
-            this.mM_Edit.Size = new System.Drawing.Size(39, 20);
+            this.mM_Edit.Size = new System.Drawing.Size(49, 24);
             this.mM_Edit.Text = "&Edit";
             // 
             // edit_Undo
             // 
             this.edit_Undo.Name = "edit_Undo";
             this.edit_Undo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.edit_Undo.Size = new System.Drawing.Size(144, 22);
+            this.edit_Undo.Size = new System.Drawing.Size(179, 26);
             this.edit_Undo.Text = "&Undo";
             // 
             // edit_Redo
             // 
             this.edit_Redo.Name = "edit_Redo";
             this.edit_Redo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.edit_Redo.Size = new System.Drawing.Size(144, 22);
+            this.edit_Redo.Size = new System.Drawing.Size(179, 26);
             this.edit_Redo.Text = "&Redo";
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(176, 6);
             // 
             // edit_Cut
             // 
@@ -321,7 +331,7 @@
             this.edit_Cut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.edit_Cut.Name = "edit_Cut";
             this.edit_Cut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.edit_Cut.Size = new System.Drawing.Size(144, 22);
+            this.edit_Cut.Size = new System.Drawing.Size(179, 26);
             this.edit_Cut.Text = "Cu&t";
             // 
             // edit_Copy
@@ -330,7 +340,7 @@
             this.edit_Copy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.edit_Copy.Name = "edit_Copy";
             this.edit_Copy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.edit_Copy.Size = new System.Drawing.Size(144, 22);
+            this.edit_Copy.Size = new System.Drawing.Size(179, 26);
             this.edit_Copy.Text = "&Copy";
             // 
             // edit_Paste
@@ -339,18 +349,18 @@
             this.edit_Paste.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.edit_Paste.Name = "edit_Paste";
             this.edit_Paste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.edit_Paste.Size = new System.Drawing.Size(144, 22);
+            this.edit_Paste.Size = new System.Drawing.Size(179, 26);
             this.edit_Paste.Text = "&Paste";
             // 
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator15.Size = new System.Drawing.Size(176, 6);
             // 
             // edit_SelectAll
             // 
             this.edit_SelectAll.Name = "edit_SelectAll";
-            this.edit_SelectAll.Size = new System.Drawing.Size(144, 22);
+            this.edit_SelectAll.Size = new System.Drawing.Size(179, 26);
             this.edit_SelectAll.Text = "Select &All";
             // 
             // mM_Tools
@@ -358,13 +368,13 @@
             this.mM_Tools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tools_Customise});
             this.mM_Tools.Name = "mM_Tools";
-            this.mM_Tools.Size = new System.Drawing.Size(47, 20);
+            this.mM_Tools.Size = new System.Drawing.Size(58, 24);
             this.mM_Tools.Text = "&Tools";
             // 
             // tools_Customise
             // 
             this.tools_Customise.Name = "tools_Customise";
-            this.tools_Customise.Size = new System.Drawing.Size(130, 22);
+            this.tools_Customise.Size = new System.Drawing.Size(161, 26);
             this.tools_Customise.Text = "&Customize";
             // 
             // toolStripSeparator10
@@ -374,12 +384,14 @@
             // 
             // toolStripStatusLabel2
             // 
+            this.toolStripStatusLabel2.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(928, 17);
             this.toolStripStatusLabel2.Spring = true;
             // 
             // status_ZoomFactor
             // 
+            this.status_ZoomFactor.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.status_ZoomFactor.Name = "status_ZoomFactor";
             this.status_ZoomFactor.Size = new System.Drawing.Size(23, 23);
             // 
@@ -395,15 +407,16 @@
             // 
             // rcMenu
             // 
+            this.rcMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.rcMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rc_Undo});
             this.rcMenu.Name = "rcMenu";
-            this.rcMenu.Size = new System.Drawing.Size(104, 26);
+            this.rcMenu.Size = new System.Drawing.Size(115, 28);
             // 
             // rc_Undo
             // 
             this.rc_Undo.Name = "rc_Undo";
-            this.rc_Undo.Size = new System.Drawing.Size(103, 22);
+            this.rc_Undo.Size = new System.Drawing.Size(114, 24);
             this.rc_Undo.Text = "Undo";
             this.rc_Undo.Click += new System.EventHandler(this.rc_Undo_Click);
             // 
@@ -443,15 +456,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.autocompleteMenu3.SetAutocompleteMenu(this.Document, this.autocompleteMenu3);
             this.Document.ContextMenuStrip = this.rcMenu;
-            this.Document.Location = new System.Drawing.Point(2, 68);
+            this.Document.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Document.Location = new System.Drawing.Point(3, 84);
+            this.Document.Margin = new System.Windows.Forms.Padding(4);
             this.Document.Name = "Document";
-            this.Document.Size = new System.Drawing.Size(637, 505);
+            this.Document.Size = new System.Drawing.Size(782, 345);
             this.Document.TabIndex = 3;
             this.Document.Text = "";
             this.Document.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Document_LinkClicked);
             // 
             // cm_trans
             // 
+            this.cm_trans.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cm_trans.Name = "cm_trans";
             this.cm_trans.Size = new System.Drawing.Size(61, 4);
             // 
@@ -470,13 +486,16 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 580);
+            this.ClientSize = new System.Drawing.Size(797, 438);
             this.Controls.Add(this.Document);
             this.Controls.Add(this.groupBox2);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
-            this.Text = "Hook Program - Đồ Án Cơ Sở Ngành Mạng";
+            this.Text = "PBL4 - Chương trình tra cứu tiếng Anh";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.Tools.ResumeLayout(false);

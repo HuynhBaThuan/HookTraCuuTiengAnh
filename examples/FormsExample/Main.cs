@@ -59,9 +59,10 @@ namespace Demo
             string rs = null;
             textBoxLog.Clear();
             SendKeys.SendWait("^(c)");
+            //^(c)
             async Task Puttaskdelay()
             {
-                await Task.Delay(50);
+                await Task.Delay(200);
             }
 
             await Puttaskdelay();
@@ -70,7 +71,8 @@ namespace Demo
             {
                 TranslatorService.LanguageServiceClient client = new TranslatorService.LanguageServiceClient();
                 client = new TranslatorService.LanguageServiceClient();
-                rs = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", input, "", "vi");
+                /*rs = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", input, "", "vi");*/
+                rs = client.Translate("C1E6D88CE2967328BBA9BC6C932B9D177247CAE5", input, "", "vi");
                 Log(input);
                 cm_trans.Items.Clear();
                 cm_trans.Items.Add(rs);
@@ -78,6 +80,7 @@ namespace Demo
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.StackTrace);
                 Log(input);
                 cm_trans.Items.Clear();
                 cm_trans.Items.Add(rs);
@@ -504,14 +507,19 @@ namespace Demo
             Open();
         }
 
-        private void rcMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void file_New_Click_1(object sender, EventArgs e)
         {
-
+            New();
         }
 
-        private void mainMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void file_Save_Click_1(object sender, EventArgs e)
         {
+            Save();
+        }
 
+        private void file_Exit_Click_1(object sender, EventArgs e)
+        {
+            Exit();
         }
     }
 }

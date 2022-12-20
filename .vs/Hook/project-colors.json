@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "693c8a54-2fa1-408b-9896-7cb1e5e9e257": {
+      "ProjectGuid": "693c8a54-2fa1-408b-9896-7cb1e5e9e257",
+      "DisplayName": "FormsExample",
+      "ColorIndex": 0
+    },
+    "f52aa97e-180a-40ed-8f2b-09080171d6c7": {
+      "ProjectGuid": "f52aa97e-180a-40ed-8f2b-09080171d6c7",
+      "DisplayName": "MouseKeyHook",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
